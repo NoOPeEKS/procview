@@ -1,3 +1,8 @@
+mod utils;
+
+use utils::memory::SystemMemory;
+
 fn main() {
-    println!("Hello, world!");
+    let sysmem = SystemMemory::new();
+    println!("{sysmem:?}");
 }
